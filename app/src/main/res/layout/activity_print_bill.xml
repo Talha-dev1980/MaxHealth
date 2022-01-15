@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="20dp"
+    tools:context=".tech.PrintBill">
+
+    <TextView
+        android:id="@+id/tvBillPreview"
+        android:layout_width="match_parent"
+        android:gravity="center"
+        android:background="@drawable/edt_field"
+        android:layout_height="wrap_content"
+        android:text="@string/bill"
+        android:textColor="@color/black" />
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="4">
+
+        <Button
+            android:id="@+id/Scan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:textAllCaps="false"
+            android:textSize="12sp"
+            android:layout_weight="2"
+            android:text="@string/scan" />
+
+        <Button
+            android:id="@+id/mPrint"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:layout_weight="2"
+            android:textAllCaps="false"
+            android:text="@string/print" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/dis"
+
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/trans"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        android:text="@string/disableBluetooth" />
+</LinearLayout>

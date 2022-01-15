@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".admin.SaleOneDay">
+
+    <LinearLayout
+        android:id="@+id/lytdatePanelODS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="6">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvDaySOD"
+            android:gravity="left"
+            android:text="@string/dayOfMonth"
+            android:textColor="@color/design_default_color_primary" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="4"
+            android:id="@+id/tvDateSOD"
+            android:gravity="center"
+            android:text="@string/date"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:id="@+id/tvTimeSOD"
+            android:gravity="right"
+            android:text="@string/time"
+            android:textColor="@color/design_default_color_primary" />
+
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/lytPtandSales"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytdatePanelODS"
+        android:layout_margin="10dp"
+        android:padding="10dp">
+
+
+        <TextView
+            android:id="@+id/tvPateintsToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="@string/pateints"
+            android:textColor="@color/black"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvPatientCountSOD"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:layout_marginLeft="50dp"
+            android:text="0"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/tvEarningsToday"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPateintsToday"
+            android:layout_margin="5dp"
+            android:text="@string/title_Earnings"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="15sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvPateintsToday"
+            android:layout_alignParentRight="true"
+            android:layout_margin="5dp"
+            android:id="@+id/tvearningCountSOd"
+            android:text="0"
+            android:textColor="@color/design_default_color_primary"
+            android:textSize="16sp" />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/tvPatientlblODS"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytPtandSales"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="50dp"
+        android:text="@string/pateints"
+        android:textColor="@color/design_default_color_primary" />
+<androidx.recyclerview.widget.RecyclerView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:layout_below="@+id/tvPatientlblODS"
+    android:id="@+id/recycler_Expand"
+    />
+
+
+</RelativeLayout>

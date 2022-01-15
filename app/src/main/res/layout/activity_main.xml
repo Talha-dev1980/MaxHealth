@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/white"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:id="@+id/lytAdminUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvAdminSigupError"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="10dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_field"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_user" />
+
+        <EditText
+            android:id="@+id/edtNameAdminSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:layout_gravity="right"
+            android:background="@color/trans"
+            android:hint="@string/userName"
+            android:textColor="@color/off"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_below="@+id/lytAdminUserName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/lytAdminEmailSignIn"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_field"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_email" />
+
+        <EditText
+            android:id="@+id/edtEmailAdminSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:layout_gravity="right"
+            android:background="@color/trans"
+            android:hint="@string/email"
+            android:textColor="@color/off"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/lytAdminPassSignin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/lytAdminEmailSignIn"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/edt_field"
+        android:orientation="horizontal"
+        android:padding="10dp"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="left"
+            android:src="@drawable/ic_pass" />
+
+        <EditText
+            android:id="@+id/edtPassAdminSignin"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="3"
+            android:inputType="textPassword"
+            android:layout_gravity="right"
+            android:background="@color/trans"
+            android:hint="@string/pass"
+            android:textColor="@color/off"
+            android:textSize="15sp" />
+
+    </LinearLayout>
+
+
+
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20sp"
+        android:layout_marginTop="0dp"
+        android:id="@+id/btnSigninAdminSignin"
+        android:layout_below="@id/lytAdminPassSignin"
+        android:background="@drawable/btn_background"
+        android:text="@string/signIn"
+        android:layout_marginRight="20dp"/>
+
+
+
+
+    <TextView
+        android:id="@+id/titleSignIn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="150dp"
+        android:text="@string/adminsignIn"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:textSize="30sp" />
+    <TextView
+        android:layout_below="@+id/titleSignIn"
+        android:layout_width="wrap_content"
+        android:id="@+id/tvAdminSigupError"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:visibility="gone"
+        android:text="@string/invalidData"
+        android:textStyle="bold"
+        android:textColor="@color/error"
+        android:textSize="12sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_below="@+id/btnSigninAdminSignin"
+        android:weightSum="5"
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alreadyHaveAcc"
+            android:layout_gravity="center"
+            android:gravity="right"
+            android:layout_weight="3"
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/trans"
+            android:text="@string/login"
+            android:id="@+id/btnLoginAdminSign"
+            android:textColor="@color/design_default_color_primary"/>
+    </LinearLayout>
+
+</RelativeLayout>

@@ -1,0 +1,153 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".tech.LoginTech">
+
+        <LinearLayout
+            android:layout_below="@+id/tvTechLoginError"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/lytAdminEmailLogIn"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edt_field"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_email" />
+
+            <EditText
+                android:id="@+id/edtTechEmailLogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:layout_weight="3"
+                android:inputType="textEmailAddress"
+                android:layout_gravity="right"
+                android:background="@color/trans"
+                android:hint="@string/email"
+                android:textColor="@color/off"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+        <LinearLayout
+            android:id="@+id/lytAdminPassLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/lytAdminEmailLogIn"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="20dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/edt_field"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:weightSum="3">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:src="@drawable/ic_pass" />
+
+            <EditText
+                android:id="@+id/edtPassLoginTech"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="10dp"
+                android:background="@color/trans"
+                android:inputType="textPassword"
+                android:layout_weight="3"
+                android:layout_gravity="right"
+                android:hint="@string/pass"
+                android:textColor="@color/off"
+                android:textSize="15sp" />
+
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/forgetPass"
+            android:layout_below="@+id/lytAdminPassLogin"
+            android:textColor="@color/off"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="0dp"
+
+            android:id="@+id/btnForgetPassTech"
+            android:layout_marginRight="20dp"
+            android:orientation="horizontal"
+            android:padding="5dp"
+            android:textSize="15sp"/>
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20sp"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/white"
+            android:id="@+id/btnLogInTechLogin"
+            android:layout_below="@id/btnForgetPassTech"
+            android:background="@drawable/btn_background"
+            android:text="@string/login"
+            android:layout_marginRight="20dp"/>
+
+
+
+
+        <TextView
+            android:id="@+id/titleLogIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="150dp"
+            android:text="@string/login"
+            android:textStyle="bold"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+    <TextView
+        android:layout_below="@+id/titleLogIn"
+        android:layout_width="wrap_content"
+        android:id="@+id/tvTechLoginError"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"
+        android:text="@string/login"
+        android:visibility="gone"
+        android:textColor="@color/error"
+        android:textSize="12sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone"
+            android:orientation="horizontal"
+            android:layout_below="@+id/btnLogInTechLogin"
+            android:weightSum="5"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/donthaveAcc"
+                android:layout_gravity="center"
+                android:gravity="right"
+                android:layout_weight="3"
+                />
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@color/trans"
+                android:text="@string/signIn"
+                android:id="@+id/btnSignInTechL"
+                android:textColor="@color/design_default_color_primary"/>
+        </LinearLayout>
+
+    </RelativeLayout>

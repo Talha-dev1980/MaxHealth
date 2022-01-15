@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "992242934069",
+    "project_id": "dialysiscenter-48bd7",
+    "storage_bucket": "dialysiscenter-48bd7.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:992242934069:android:816619bfba5325e59cec7c",
+        "android_client_info": {
+          "package_name": "com.medical.dialysiscenter"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "992242934069-f4b0sf6kops5dc3hilrn21idcuhdrknk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBKt6ln_Qju9EiGYZ3Ob4raGNbr312Xvbg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "992242934069-f4b0sf6kops5dc3hilrn21idcuhdrknk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
